@@ -35,7 +35,7 @@ class App extends Component {
 
   render() {
    const callAPI=()=>{
-      fetch('http://localhost:3001/speechAPI')
+      fetch('http://localhost:3001/testAPI')
       .then(res => res.text())
       .then(res=>this.setState({
         apiResponse : res

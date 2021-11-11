@@ -24,9 +24,9 @@ class RecSpeech extends Component {
     }
     handleAudioUpload(file) {
       // console.log(file);
-      const str2blob = txt => new Blob([txt],{type:'audio/webm'});
-      console.log(str2blob(this.state.audioDetails.blob));
-       let urlsrc= URL.createObjectURL(str2blob(this.state.audioDetails.url))
+      // const str2blob = txt => new Blob([txt],{type:'audio/webm'});
+      // console.log(str2blob(this.state.audioDetails.blob));
+       let urlsrc= URL.createObjectURL(this.state.audioDetails.blob)
       console.log('urlsrc= '+urlsrc)
         fetch('http://localhost:3001/speechAPI',{
             method: 'POST',
