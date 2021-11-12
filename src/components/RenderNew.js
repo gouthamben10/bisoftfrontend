@@ -43,7 +43,7 @@ class RenderNew extends Component {
       
     );
     return (
-      
+    
       this.props.showComponent?<div><div>|<br/>|<br/>|<br/>V<br/></div><Example/></div>:null
       //<h1>fomponent</h1>
   
