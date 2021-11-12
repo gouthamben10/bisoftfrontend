@@ -74,8 +74,18 @@ class App extends Component {
         textcom[i]='component3'
        }
         
-       if(this.state.apiResponse=='component 4')
-        this.setState({text : 'wait',showComponent : true})
+       if(this.state.apiResponse=='4'){
+        i++
+        showcom[i]=true
+        textcom[i]='STOP'
+       }
+       if(this.state.apiResponse=='5'){
+        
+        showcom[i]=false
+        i--
+        
+       }
+      
      })
      fetch('http://localhost:3001/testAPI')
      .then(res=>{console.log(res.status)
