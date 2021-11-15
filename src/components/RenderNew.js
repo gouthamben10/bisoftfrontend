@@ -38,13 +38,17 @@ class RenderNew extends Component {
      const Example = () => (
               
       <OverlayTrigger trigger="click" placement="bottom" overlay={popover} >
-        <Button variant="success" >{this.props.text}</Button>
+        <Button variant="success" >{this.props.text}{this.props.timecom}</Button>
       </OverlayTrigger>
       
-    );
+    ); 
+  
     return (
-    
-      this.props.showComponent?<div><div>|<br/>|<br/>|<br/>V<br/></div><Example/></div>:null
+    <div>
+       {this.props.showComponent?<div><div>|<br/>|<br/>|<br/>V<br/></div><Example/></div>:null}
+      
+    </div>
+     //this.props.showcondition?<div>-<br/>-<br/>-<br/><Button variant="success" >yes</Button>|<br/>|<br/>|<br/><Button variant="success" >no</Button></div>:null
       //<h1>fomponent</h1>
   
       
